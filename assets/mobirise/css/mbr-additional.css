@@ -1233,22 +1233,3 @@ a {
 .cid-taL3ZPvjwo .media-container-row .row-copirayt p {
   width: 100%;
 }
-
-/* NEW STUFF -- the next three are for making the cards a uniform size */
-.card-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.mbr-section-btn {
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.btn-secondary {
-  width: 250px; /* or 100% if you want it full-width inside the column */
-  text-align: center;
-}
