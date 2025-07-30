@@ -1243,6 +1243,7 @@ a {
 }
 
 .mbr-section-btn {
+  margin-top: auto;
   display: flex;
   justify-content: center;
 }
