@@ -4,18 +4,21 @@
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WYS5RZS0M"></script>
   <style>
-  .features4 .row {
-    align-items: stretch;
+  .features4 > .container > .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 
   .features4 .col-lg-6 {
-    display: flex;
+    display: block;
   }
 
   .features4 .card-wrapper {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   .features4 .text-wrapper {
@@ -27,14 +30,16 @@
   .features4 .mbr-section-btn {
     margin-top: auto;
   }
-.features4 .card-wrapper {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 
-.features4 .card-wrapper:hover {
-  transform: translateY(-4px);
-}
+  .features4 .card-wrapper:hover {
+    transform: translateY(-4px);
+  }
 
+  @media (max-width: 991px) {
+    .features4 > .container > .row {
+      grid-template-columns: 1fr;
+    }
+  }
 </style>
 <script>
   window.dataLayer = window.dataLayer || [];
